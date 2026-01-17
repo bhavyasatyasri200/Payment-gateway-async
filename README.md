@@ -164,7 +164,7 @@ function verifyWebhook(payload, signature, secret) {
 ---
 ## Architecture Diagram
 
-      +------------------+
+          +------------------+
       |    Frontend      |
       |  Checkout Page   |
       +--------+---------+
@@ -196,6 +196,7 @@ function verifyWebhook(payload, signature, secret) {
        ^             |
        |             v
        +----- Merchant / Client Endpoint
+
 
 
 ---
