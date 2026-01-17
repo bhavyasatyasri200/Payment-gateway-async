@@ -1,0 +1,85 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Color theme: orange / peach */
+  color-scheme: light dark;
+  color: #431407; /* dark brown text for readability on peach bg */
+  background-color: #fff7ed; /* peach background */
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #f97316; /* bright orange */
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #fb923c; /* lighter orange on hover */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center; /* horizontal center */
+  align-items: center;     /* vertical center */
+  min-width: 320px;
+  min-height: 100vh;
+  background: 
+    radial-gradient(circle at top left, #ffd8b5, transparent 40%),
+    radial-gradient(circle at bottom right, #ffb347, transparent 40%),
+    #fff7ed; /* layered peach/orange background */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  text-align: center;
+  color: #ea580c; /* dark orange heading */
+}
+
+button {
+  border-radius: 12px;
+  border: 1px solid #fbbf24; /* light orange border */
+  padding: 0.8em 1.6em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  background-color: #f97316; /* bright orange button */
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(249, 115, 22, 0.4);
+}
+
+button:hover {
+  background-color: #fb923c; /* lighter orange on hover */
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(249, 115, 22, 0.5);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto #f97316;
+}
+
+/* Responsive / Light Mode Override */
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #431407;
+    background-color: #fff7ed;
+  }
+  a:hover {
+    color: #fb923c;
+  }
+  button {
+    background-color: #f97316;
+    color: #ffffff;
+  }
+}
