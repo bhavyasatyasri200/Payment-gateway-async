@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Webhooks from './pages/Webhooks';
 import Docs from './pages/Docs';
-
+import './App.css';
 function App() {
   const [page, setPage] = useState('webhooks');
 
