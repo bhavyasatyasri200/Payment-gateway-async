@@ -6,8 +6,8 @@ function App() {
   const [page, setPage] = useState('webhooks');
 
   return (
-    <div style={{ padding: 20 }}>
-      <nav style={{ marginBottom: 20 }}>
+    <div className="app-container">
+      <nav className="nav-bar">
         <button onClick={() => setPage('webhooks')}>Webhooks</button>
         <button onClick={() => setPage('docs')} style={{ marginLeft: 10 }}>
           API Docs
@@ -19,5 +19,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
